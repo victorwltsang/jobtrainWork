@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>CodePen - Jobtrain-1</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="styles/quote.css">
+
+
+
+
+</head>
+
+<body translate="no">
+
+    <header>
+        <h1> <span class="red">Hello</span> World! <strong>Welcome</strong> to my <em class="blue">codepen</em><span class="green">.</span> </h1>
+    </header>
+    <div class="middle">
+        <div class="quote-box">
+            <blockquote id="quote"> It's not the size of the dog in the fight, but the size of the fight in the dog − Archie Griffen.</blockquote>
+        </div>
+        <button class="btn btn-primary btn-lg " onclick="change();"> Click Me </button>
+    </div>
+
+    <footer>
+        Motivational Quotes from:
+        <cite><a href="https://www.realbuzz.com/articles/top-20-motivational-quotes/" target="_blank"> RealBuzz</cite>
+    </footer>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+
+    <script>
+        $(document).ready(function() {
+            color();
+
+        });
+
+        function change() {
+            var red = Math.floor(Math.random() * 256);
+            var blue = Math.floor(Math.random() * 256);
+            var green = Math.floor(Math.random() * 256);
+            var rgb = 'rgb(' + red + ',' + blue + ',' + green + ')';
+            document.body.style.backgroundColor = rgb;
+            console.log(rgb);
+            changeQuote();
+        }
+
+        var quotes = ["It's not the size of the dog in the fight, but the size of the fight in the dog - Archie Griffen",
+
+            "Nothing lasts forever. Not even your troubles - Arnold H Glasgow",
+
+            "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle - Albert Einstein",
+
+            "Take chances, make mistakes. That's how you grow. Pain nourishes your courage. You have to fail in order to practice being brave – Mary Tyler Moore",
+
+            "Being strong means rejoicing in who you are, complete with imperfections - Margaret Woodhouse",
+
+            "If you don’t go after what you want, you’ll never have it. If you don’t ask, the answer is always no. If you don’t step forward, you’re always in the same place - Nora Roberts",
+
+            "The only place you find success before work is in the dictionary - May V. Smith",
+
+            "Where hope grows, miracles blossom - Elna Rae",
+
+            "A life spent making mistakes is not only more honorable but more useful than a life spent doing nothing - George Bernard Shaw",
+
+            "Nobody can make you feel inferior without your consent  - Eleanor Roosevelt",
+
+            "It took me a long time not to judge myself through someone else's eyes - Sally Field",
+
+            "I quit being afraid when my first venture failed and the sky didn't fall down  - Allen H. Neuharth",
+
+            "Hope never abandons you, you abandon it - George Weinberg",
+
+            "Make the most of yourself, for that is all there is of you - Ralph Waldo Emerson",
+
+            "Awards become corroded, friends gather no dust - Jesse Owens",
+
+            "Nothing splendid has ever been achieved except by those who dared believe that something inside of them was superior to circumstance - Bruce Barton",
+
+            "Life is 10% of what happens to me and 90% of how I react to it - John Maxwell",
+
+            "Aerodynamically the bumblebee shouldn't be able to fly, but the bumblebee doesn't know that so it goes on flying anyway - Mary Kay Ash"
+        ];
+
+        function changeQuote() {
+            var randomQuote = Math.floor(Math.random() * quotes.length);
+            console.log(randomQuote);
+            console.log(quotes[randomQuote]);
+            document.getElementById("quote").innerText = quotes[randomQuote];
+        }
+
+        // function formatQuote{
+        //   var format = quotes[0];
+        //   var minus = indexOf("-");
+        //   console.log(minus);
+        // }
+        //# sourceURL=pen.js
+    </script>
+
+
+
+
+</body>
+
+</html>

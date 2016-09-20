@@ -1,0 +1,162 @@
+html{
+    margin:0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    color:black;
+    font-size:18px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight:bold;
+}
+
+h1 {
+  margin: 0;
+  color:white;
+}
+
+.container {
+    width:100%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height:auto;
+    width:100%;
+}
+
+.content {
+    width:70%;
+    height:auto;
+    margin:0 auto;
+    text-align:center;
+    padding: 10px;
+    
+}
+.grey{
+    background-color:#f5f5f5;
+}
+.side-red{
+background-color:crimson;
+}
+.fix{
+    padding-top:30px;
+}
+
+nav {
+float:right;
+height:100px;
+width:100%;
+background-color:crimson;
+
+}
+.right{
+margin-left:410px;
+
+display:inline;
+}
+
+nav ul {
+  list-style-type: none;
+  
+  
+}
+
+nav ul li{
+     display:inline;
+     padding:10px;
+     
+     
+}
+
+nav .selected {
+  font-weight: bold;
+}
+
+nav .logo{
+    float:left;
+    margin-top:20px;
+    padding-left:80px;
+}
+
+#mission {
+   color: black;
+   
+}
+
+.splash {
+    width:100%;
+    height:700px;
+    background: url('https://static.pexels.com/photos/7357/startup-photos-large.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color:grey;
+    
+}
+
+.headline{
+    width:70%;
+    height:700px;
+    margin:0 auto;
+   
+    padding: 0 70px 80px 70px;
+    padding-top:210px;
+    text-align:center;
+    vertical-align: middle;
+
+    box-sizing:border-box;
+    color:white;
+    /*width:60%;*/
+}
+
+p{
+    text-align:center;
+    padding:20px;
+    font-size:19px;
+   
+}
+
+footer {
+  clear: both; 
+  padding: 10px;
+  background-color: #999;
+  color: white; 
+  text-align: center;
+}
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+
+button {
+    background-color: LemonChiffon;
+    border: white;
+    color: black;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.red {
+    color: #DC143C;
+}
+
+p2 {
+    margin: 20px;
+}
+    

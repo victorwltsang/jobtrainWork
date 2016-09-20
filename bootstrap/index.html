@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="hero.css" />
+
+    <style>
+        .jumbotron {
+            padding-top: 100px !important;
+            background: url('https://images.unsplash.com/uploads/1412451503663912b1a68/d80831b2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=106f1a10230b6b975962d38873902dfb') no-repeat;
+            background-size: 100% 100%;
+            color: white;
+            text-align: center;
+        }
+
+        .glass {
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px;
+            font-size: 200%;
+        }
+
+        #contact {
+            margin-bottom: 150px;
+        }
+
+        .contact {
+            margin-bottom: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+        <div class="container">
+            <div class="nav navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#animals" class="nav-item nav-link">Animals</a>
+                <a href="#contact" class="nav-item nav-link">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- You'll be wrapping this content into a jumbotron, and adding more classes -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="glass">
+                <h1 class="display-1">Hello World!</h1>
+                <h1 class="display-6">Welcome to Animal Kingdom</h1>
+                <p>My name is Victor.</p>
+                <p>I will be your Tour Guide.</p>
+
+                <a class="btn btn-primary btn-lg" href="#animals">Continue</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="animals" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card ">
+                    <img class="card-img-top img-fluid center-block" src="http://www.placekitten.com/400/400/" alt="Cat Cat" />
+                    <div class="card-block">
+                        <h2 class="card-title">Kittens</h2>
+                        <p class="card-text">A kitten (also known as a kitty or kitty cat) is a juvenile cat. After being born, kittens are totally dependent on their mother for survival and they do not normally open their eyes until after seven to ten days. After about two
+                            weeks, kittens quickly develop and begin to explore the world outside the nest. After a further three to four weeks, they begin to eat solid food and grow adult teeth. Domestic kittens are highly social animals and enjoy human
+                            companionship.
+                        </p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Adopt a Kitten</button>
+
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <form action="mailto:mj@mjawili.com" method="get">
+                                        <div class="form-group row">
+
+                                            <div class="col-md-8 col-md-offset-2">
+                                                <label for="name" class="form-control-label">Name</label>
+                                                <input type="name" class="form-control" id="name" placeholder="Your Name">
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group row">
+
+                                            <div class="col-md-8 col-md-offset-2">
+                                                <label for="message" class="form-control-label">Message</label>
+                                                <textarea id="message" class="form-control" name="body" rows="3" placeholder="I want to adopt a bear. Please Respond to me ASAP!!"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group row">
+
+                                            <div class="col-md-8 col-md-offset-2">
+                                                <button type="submit" class="btn btn-primary bt-lg">Submit</button>
+                                            </div>
+
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid center-block" src="http://placecorgi.com/400/400" alt="Bear Dog" />
+                    <div class="card-block">
+                        <h2 class="card-title">Puppies</h2>
+                        <p class="card-text">A puppy is a juvenile dog. Some puppies can weigh 1–3 lb (0.45–1.36 kg), while larger ones can weigh up to 15–23 lb (6.8–10.4 kg). All healthy puppies grow quickly after birth. A puppy's coat color may change as the puppy grows
+                            older, as is commonly seen in breeds such as the Yorkshire Terrier. In vernacular English, puppy refers specifically to dogs while pup may often be used for other mammals such as seals, giraffes, guinea pigs, or even rats.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Adopt a Puppy</button>
+
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <form action="mailto:mj@mjawili.com" method="get">
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <label for="name" class="form-control-label">Name</label>
+                                                    <input type="name" class="form-control" id="name" placeholder="Your Name">
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <label for="message" class="form-control-label">Message</label>
+                                                    <textarea id="message" class="form-control" name="body" rows="3" placeholder="I want to adopt a bear. Please Respond to me ASAP!!"></textarea>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <button type="submit" class="btn btn-primary bt-lg">Submit</button>
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid center-block" src="https://placebear.com/400/400" alt="Bunny Pizza" />
+                    <div class="card-block">
+                        <h2 class="card-title">Bear</h2>
+                        <p>Bears are mammals of the family Ursidae. Bears are classified as caniforms, or doglike carnivorans, with the pinnipeds being their closest living relatives. Although only eight species of bears are extant, they are widespread, appearing in a wide variety of habitats throughout the Northern Hemisphere and partially in the Southern Hemisphere. Bears are found on the continents of North America, South America, Europe, and Asia.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Adopt a Bear</button>
+
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <form action="mailto:mj@mjawili.com" method="get">
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <label for="name" class="form-control-label">Name</label>
+                                                    <input type="name" class="form-control" id="name" placeholder="Your Name">
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <label for="message" class="form-control-label">Message</label>
+                                                    <textarea id="message" class="form-control" name="body" rows="3" placeholder="I want to adopt a bear. Please Respond to me ASAP!!"></textarea>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <button type="submit" class="btn btn-primary bt-lg">Submit</button>
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card ">
+                    <img class="card-img-top img-fluid center-block" src="http://www.placekitten.com/500/500/" alt="Cat Cat" />
+                    <div class="card-block">
+                        <h2 class="card-title">Kittens</h2>
+                        <p class="card-text">A kitten (also known as a kitty or kitty cat) is a juvenile cat. After being born, kittens are totally dependent on their mother for survival and they do not normally open their eyes until after seven to ten days. After about two
+                            weeks, kittens quickly develop and begin to explore the world outside the nest. After a further three to four weeks, they begin to eat solid food and grow adult teeth. Domestic kittens are highly social animals and enjoy human
+                            companionship.
+                        </p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Adopt a Kitten</button>
+
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <form action="mailto:mj@mjawili.com" method="get">
+                                        <div class="form-group row">
+
+                                            <div class="col-md-8 col-md-offset-2">
+                                                <label for="name" class="form-control-label">Name</label>
+                                                <input type="name" class="form-control" id="name" placeholder="Your Name">
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group row">
+
+                                            <div class="col-md-8 col-md-offset-2">
+                                                <label for="message" class="form-control-label">Message</label>
+                                                <textarea id="message" class="form-control" name="body" rows="3" placeholder="I want to adopt a bear. Please Respond to me ASAP!!"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group row">
+
+                                            <div class="col-md-8 col-md-offset-2">
+                                                <button type="submit" class="btn btn-primary bt-lg">Submit</button>
+                                            </div>
+
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid center-block" src="http://placecorgi.com/500/500" alt="Bear Dog" />
+                    <div class="card-block">
+                        <h2 class="card-title">Puppies</h2>
+                        <p class="card-text">A puppy is a juvenile dog. Some puppies can weigh 1–3 lb (0.45–1.36 kg), while larger ones can weigh up to 15–23 lb (6.8–10.4 kg). All healthy puppies grow quickly after birth. A puppy's coat color may change as the puppy grows
+                            older, as is commonly seen in breeds such as the Yorkshire Terrier. In vernacular English, puppy refers specifically to dogs while pup may often be used for other mammals such as seals, giraffes, guinea pigs, or even rats.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Adopt a Puppy</button>
+
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <form action="mailto:mj@mjawili.com" method="get">
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <label for="name" class="form-control-label">Name</label>
+                                                    <input type="name" class="form-control" id="name" placeholder="Your Name">
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <label for="message" class="form-control-label">Message</label>
+                                                    <textarea id="message" class="form-control" name="body" rows="3" placeholder="I want to adopt a bear. Please Respond to me ASAP!!"></textarea>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <button type="submit" class="btn btn-primary bt-lg">Submit</button>
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid center-block" src="https://placebear.com/500/500" alt="Bunny Pizza" />
+                    <div class="card-block">
+                        <h2 class="card-title">Bear</h2>
+                        <p>Bears are mammals of the family Ursidae. Bears are classified as caniforms, or doglike carnivorans, with the pinnipeds being their closest living relatives. Although only eight species of bears are extant, they are widespread, appearing in a wide variety of habitats throughout the Northern Hemisphere and partially in the Southern Hemisphere. Bears are found on the continents of North America, South America, Europe, and Asia.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Adopt a Bear</button>
+
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <form action="mailto:mj@mjawili.com" method="get">
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <label for="name" class="form-control-label">Name</label>
+                                                    <input type="name" class="form-control" id="name" placeholder="Your Name">
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <label for="message" class="form-control-label">Message</label>
+                                                    <textarea id="message" class="form-control" name="body" rows="3" placeholder="I want to adopt a bear. Please Respond to me ASAP!!"></textarea>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <button type="submit" class="btn btn-primary bt-lg">Submit</button>
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <h1 class="contact"> Contact Me </h1>
+            <form action="mailto:mj@mjawili55.com" method="get">
+                <div class="form-group row">
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <label for="name" class="form-control-label">Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+
+                </div>
+                <div class="form-group row">
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <label for="message" class="form-control-label">Message</label>
+                        <textarea id="message" class="form-control" name="body" rows="3" placeholder="I want to adopt a bear. Please Respond to me ASAP!!"></textarea>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <button type="submit" class="btn btn-primary bt-lg">Submit</button>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+
+    </div>
+    <!-- end -->
+    <nav class="navbar navbar-static-bottom navbar-dark bg-inverse">
+        <div class="container">
+            <div class="nav navbar-nav">
+                <a href="https://www.linkedin/victorwltsang" class="nav-item nav-link ">LinkedIn</a>
+                <a href="https://github.com/victorwltsang" class="nav-item nav-link">Github</a>
+                <a href="http://codepen.io/victorwltsang" class="nav-item nav-link">Codepen</a>
+                <a href="#" class="nav-item nav-link">eMail</a>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

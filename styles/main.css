@@ -1,0 +1,168 @@
+* {
+box-sizing: border-box;
+}
+
+html {
+height: 100%;
+width: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+font-family: 'Caveat', cursive;
+}
+
+header {
+background: url('https://s32.postimg.org/8fs8fg2ud/bg_new.png') no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+text-align: center;
+}
+
+
+/* The class equivlant of a */
+
+.nav-link {
+color: white;
+font-size: 2.5rem;
+padding: 15px 20px 0px 20px;
+}
+
+
+/* a hover */
+
+.nav-link:hover {
+color: orange;
+text-decoration: underline;
+}
+
+
+.intro {
+margin-top: 4vh;
+padding: 20px;
+}
+
+.intro h1 {
+font-size: 5rem;
+font-weight: bold;
+color: black;
+margin-bottom: 8vh;
+}
+
+.social {
+background-color: rgba(255, 255, 255, 0.30);
+
+padding: 40px;
+}
+
+.icons {
+display: block;
+max-height: 80px;
+width: auto;
+padding:15px;
+box-sizing:content-box;
+}
+
+.btn-xl {
+font-size: 250%;
+margin-top: 5vh;
+}
+
+#about,#portfolio,footer {
+padding: 25px;
+}
+.card-columns{
+margin-bottom:25px;
+}
+
+#about p {
+font-family: 'Lato', sans-serif;
+font-size:1.5rem;
+padding:1rem;
+
+}
+
+.avatar {
+border: 3px solid white;
+border-radius: 50%;
+float: left;
+margin-right: 35px;
+max-width: 100%;
+display: block;
+margin-bottom:2rem;
+clear:both;
+}
+
+.alt-color {
+background-color: #AFEAAA;
+}
+
+.alt-white {
+background-color: #f4f3ef;
+}
+
+.big {
+color: #FE8402;
+font-size: 3rem;
+font-weight: 600;
+display: block;
+padding-bottom: 30px;
+}
+.card-header{
+font-size:1.5rem;
+text-align:center;
+background-color:#336699;
+color:white;
+}
+
+footer {
+
+background-color: #2FB9C3;
+
+text-align: center;
+font-size: 1.5em;
+margin-bottom: 0;
+
+padding: 5px;
+color: white;
+}
+.copy {
+display: inline-block;
+vertical-align: middle;
+margin-right: 20px;
+}
+.f-icons {
+display: inline;
+max-height: 35px;
+width: auto;
+padding: 10px;
+}
+
+@media screen and (max-width:400px) {
+.icons {
+display: block;
+max-height: 60px;
+width: auto;
+}
+}
+.bio{
+padding:30px;
+}
+@media screen and (max-width:399px) {
+.icons {
+display: none;
+}
+.social {
+display: none;
+}
+}
+
+@media screen and (max-width:580px) {
+.btn-xl {
+display: none;
+}
+}
